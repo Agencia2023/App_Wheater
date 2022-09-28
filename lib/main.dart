@@ -1,19 +1,19 @@
-import 'package:calculadora/pages/home.page.dart';
 import 'package:flutter/material.dart';
+import 'pages/home.page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Wheater App',
+      debugShowCheckedModeBanner: false,
+      title: 'Pronostico del tiempo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.cyan,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
     );
